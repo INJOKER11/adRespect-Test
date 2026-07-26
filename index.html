@@ -37,56 +37,65 @@
 
     <main>
       <!--      hero-->
-      <section
-        class="bg-beige relative grid max-h-[737px] grid-cols-[52%_48%] overflow-hidden"
-      >
-        <div class="flex flex-col gap-18 px-[89px_64px] py-36">
-          <div class="flex flex-col gap-11">
-            <h1
-              class="font-[family-name:var(--font-montserrat)] text-6xl font-medium"
-            >
-              Nowoczesna aranżacja Twojego ogrodu
-            </h1>
-            <p class="text-[16px]">
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-              podejściem do każdego projektu.
-            </p>
+      <section class="bg-beige relative min-h-[737px] overflow-hidden">
+        <!--        px-[89px_64px] -->
+        <div class="mx-auto grid max-w-315.5 grid-cols-[752px_688px]">
+          <div class="flex max-w-149.75 flex-col gap-18 py-36">
+            <div class="flex flex-col gap-11">
+              <h1
+                class="font-[family-name:var(--font-montserrat)] text-6xl font-medium"
+              >
+                Nowoczesna aranżacja Twojego ogrodu
+              </h1>
+              <p class="text-[16px]">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+                podejściem do każdego projektu.
+              </p>
+            </div>
+            <div class="flex gap-9">
+              <button
+                class="bg-primary text-grey cursor-pointer rounded-full px-6 py-3"
+              >
+                Skontaktuj się z nami
+              </button>
+              <button
+                class="border-primary text-primary flex cursor-pointer items-center gap-[8px] rounded-full border bg-transparent px-[22px] py-3"
+              >
+                Zobacz nasze realizacje
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 -1.6221e-08L7.36358 -3.13994e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00472 16L16 7.99529Z"
+                    class="text-primary"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="flex gap-9">
-            <button
-              class="bg-primary text-grey cursor-pointer rounded-full px-6 py-3"
-            >
-              Skontaktuj się z nami
+          <div class="h-full">
+            <img
+              src="./src/assets/slider-pic.png"
+              class="absolute top-0 right-0 h-full w-[calc(688px+(100vw-1440px)/2)] max-w-none object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-grey absolute right-[0] bottom-[0] flex gap-[32px] px-[32px] py-[24px]"
+          >
+            <button class="cursor-pointer" aria-label="slide left">
+              <img src="./src/assets/arw_left.svg" alt="" />
             </button>
-            <button
-              class="border-primary text-primary flex cursor-pointer items-center gap-[8px] rounded-full border bg-transparent px-[22px] py-3"
-            >
-              Zobacz nasze realizacje
-              <img
-                class="h-[16px] w-[16px]"
-                src="./src/assets/arw_dwn.svg"
-                alt=""
-              />
+            <button class="cursor-pointer" aria-label="slide right">
+              <img class="rotate-180" src="./src/assets/arw_left.svg" alt="" />
             </button>
           </div>
-        </div>
-        <div class="h-full">
-          <img
-            src="./src/assets/slider-pic.png"
-            class="h-full w-full object-cover"
-            alt=""
-          />
-        </div>
-        <div
-          class="bg-grey absolute right-[0] bottom-[0] flex gap-[32px] px-[32px] py-[24px]"
-        >
-          <button class="cursor-pointer" aria-label="slide left">
-            <img src="./src/assets/arw_left.svg" alt="" />
-          </button>
-          <button class="cursor-pointer" aria-label="slide right">
-            <img class="rotate-180" src="./src/assets/arw_left.svg" alt="" />
-          </button>
         </div>
       </section>
 
@@ -112,7 +121,7 @@
           </div>
         </div>
 
-        <div class="flex justify-center gap-[64px] px-[89px]">
+        <div class="mx-auto flex max-w-315.5 justify-center gap-[64px]">
           <div
             class="flex w-full max-w-[378px] flex-col gap-[63px] rounded-[28px] bg-white px-[40px] py-[48px]"
           >
@@ -133,11 +142,22 @@
             <a
               class="text-primary flex cursor-pointer items-center gap-[10px] underline underline-offset-4"
               >Dowiedz się więcej
-              <img
-                class="h-[16px] w-[16px] -rotate-90"
-                src="./src/assets/arw_dwn.svg"
-                alt=""
-            /></a>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="-rotate-90"
+              >
+                <path
+                  d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 -1.6221e-08L7.36358 -3.13994e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00472 16L16 7.99529Z"
+                  class="text-primary"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
           </div>
           <div
             class="flex w-full max-w-[378px] flex-col gap-[63px] rounded-[28px] bg-white px-[40px] py-[48px]"
@@ -159,11 +179,20 @@
             <a
               class="text-primary flex cursor-pointer items-center gap-[10px] underline underline-offset-4"
               >Dowiedz się więcej
-              <img
-                class="h-[16px] w-[16px] -rotate-90"
-                src="./src/assets/arw_dwn.svg"
-                alt=""
-            /></a>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="-rotate-90"
+              >
+                <path
+                  d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 -1.6221e-08L7.36358 -3.13994e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00472 16L16 7.99529Z"
+                  class="text-primary"
+                  fill="currentColor"
+                /></svg
+            ></a>
           </div>
           <div
             class="flex w-full max-w-[378px] flex-col gap-[63px] rounded-[28px] bg-white px-[40px] py-[48px]"
@@ -185,14 +214,85 @@
             <a
               class="text-primary flex cursor-pointer items-center gap-[10px] underline underline-offset-4"
               >Dowiedz się więcej
-              <img
-                class="h-[16px] w-[16px] -rotate-90"
-                src="./src/assets/arw_dwn.svg"
-                alt=""
-            /></a>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="-rotate-90"
+              >
+                <path
+                  d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 -1.6221e-08L7.36358 -3.13994e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00472 16L16 7.99529Z"
+                  class="text-primary"
+                  fill="currentColor"
+                /></svg
+            ></a>
           </div>
         </div>
       </section>
+
+      <!--      o firmie-->
+      <section class="bg-primary relative min-h-[720px] overflow-hidden">
+        <div class="mx-auto grid max-w-315.5 grid-cols-[688px_752px]">
+          <div class="h-full">
+            <img
+              src="./src/assets/about.png"
+              class="absolute top-0 left-0 h-full w-[calc(688px+(100vw-1440px)/2)] max-w-none object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="my-33.75 flex w-full max-w-[596px] flex-col gap-18 pl-[96px]"
+          >
+            <div class="text-grey flex flex-col gap-10 text-wrap">
+              <div class="flex flex-col gap-4">
+                <p class="text-[12px]">O firmie</p>
+                <h2 class="text-[48px] leading-[115%] font-medium">
+                  <span class="font-[family-name:var(--font-montserrat)]"
+                    >Tworzymy<br />
+                    z</span
+                  >
+                  <span class="font-medium italic">pasją</span>
+                </h2>
+              </div>
+              <p
+                class="w-full text-[16px] leading-[150%] font-normal text-wrap"
+              >
+                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                wykwalifikowani projektanci oraz architekci, których zadaniem
+                jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+                minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+                małoobsługowe, dostosowane do współczesnego trybu życia.
+              </p>
+            </div>
+            <div class="flex gap-9">
+              <button
+                class="border-grey text-grey flex cursor-pointer items-center gap-[8px] rounded-full border bg-transparent px-[22px] py-3"
+              >
+                Poznaj nas bliżej
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="-rotate-90"
+                >
+                  <path
+                    d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 -1.6221e-08L7.36358 -3.13994e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00472 16L16 7.99529Z"
+                    class="text-grey"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </main>
 
     <footer></footer>
