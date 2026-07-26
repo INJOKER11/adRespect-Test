@@ -20,7 +20,7 @@
             <li>
               <button class="flex items-center gap-1.25">
                 Oferta
-                <img src="./src/assets/arrow_dw.svg" alt="" />
+                <img src="src/assets/chevron_dw.svg" alt="" />
               </button>
             </li>
             <li><a href="#">O firmie</a></li>
@@ -36,7 +36,62 @@
     </header>
 
     <main>
-      <section></section>
+      <!--      hero-->
+      <section
+        class="bg-beige relative grid max-h-[737px] grid-cols-[52%_48%] overflow-hidden"
+      >
+        <div class="flex flex-col gap-18 px-[89px_64px] py-36">
+          <div class="flex flex-col gap-11">
+            <h1
+              class="font-[family-name:var(--font-montserrat)] text-6xl font-medium"
+            >
+              Nowoczesna aranżacja Twojego ogrodu
+            </h1>
+            <p class="text-[16px]">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu.
+            </p>
+          </div>
+          <div class="flex gap-9">
+            <button
+              class="bg-primary text-grey cursor-pointer rounded-full px-6 py-3"
+            >
+              Skontaktuj się z nami
+            </button>
+            <button
+              class="border-primary text-primary flex cursor-pointer items-center gap-[8px] rounded-full border bg-transparent px-[22px] py-3"
+            >
+              Zobacz nasze realizacje
+              <img
+                class="h-[16px] w-[16px]"
+                src="./src/assets/arw_dwn.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div class="h-full">
+          <img
+            src="./src/assets/slider-pic.png"
+            class="h-full w-full object-cover"
+            alt=""
+          />
+        </div>
+        <div
+          class="bg-grey absolute right-[0] bottom-[0] flex gap-[32px] px-[32px] py-[24px]"
+        >
+          <button class="cursor-pointer" aria-label="slide left">
+            <img src="./src/assets/arw_left.svg" alt="" />
+          </button>
+          <button class="cursor-pointer" aria-label="slide right">
+            <img class="rotate-180" src="./src/assets/arw_left.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <!--      oferta-->
+      <section>Oferta</section>
     </main>
 
     <footer></footer>

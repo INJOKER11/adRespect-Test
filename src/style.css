@@ -2,8 +2,18 @@
 
 @theme {
   --font-sans: "Inter", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-primary: #1b5b31;
+  --color-grey: #f5f0ec;
+  --color-beige: #dcc1ab;
+
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-blue: #003edc;
 }
 
 body {
   font-family: var(--font-sans);
+  color: var(--color-black);
 }
