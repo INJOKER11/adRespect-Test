@@ -10,56 +10,65 @@ const macy = Macy({
   },
 });
 
-const wrapper = document.querySelector("#gallery-wrapper");
-const overlay = document.querySelector("#gallery-overlay");
-const button = document.querySelector("#gallery-toggle");
-const icon = document.querySelector("#gallery-toggle-icon");
+const wrapper = document.getElementById("gallery-wrapper");
+const toggle = document.getElementById("gallery-toggle");
+const overlay = document.getElementById("gallery-overlay");
+const icon = document.getElementById("gallery-toggle-icon");
 
-function getCollapsedHeight() {
-  if (window.innerWidth >= 1280) return "1475px";
-  if (window.innerWidth >= 1024) return "900px";
-  if (window.innerWidth >= 768) return "620px";
-  return "420px";
-}
-
-const POSITION_CLASSES = {
-  collapsed: ["absolute", "bottom-11.25", "left-1/2", "-translate-x-1/2"],
-  expanded: ["relative", "mx-auto", "mt-8"],
+const COLLAPSED_HEIGHT = {
+  sm: "420px",
+  md: "620px",
+  lg: "900px",
+  xl: "1475px",
 };
 
-function setButtonPosition(isExpanded) {
-  const add = isExpanded
-    ? POSITION_CLASSES.expanded
-    : POSITION_CLASSES.collapsed;
-  const remove = isExpanded
-    ? POSITION_CLASSES.collapsed
-    : POSITION_CLASSES.expanded;
-
-  button.classList.remove(...remove);
-  button.classList.add(...add);
-  icon.classList.toggle("rotate-180", isExpanded);
+function getCollapsedHeight() {
+  if (window.innerWidth >= 1280) return COLLAPSED_HEIGHT.xl;
+  if (window.innerWidth >= 1024) return COLLAPSED_HEIGHT.lg;
+  if (window.innerWidth >= 768) return COLLAPSED_HEIGHT.md;
+  return COLLAPSED_HEIGHT.sm;
 }
 
-function expandGallery() {
-  macy.recalculate(true);
-  wrapper.style.maxHeight = `${wrapper.scrollHeight}px`;
-
-  overlay.classList.add("hidden");
-  setButtonPosition(true);
-}
-
-function collapseGallery() {
-  wrapper.style.maxHeight = getCollapsedHeight();
-  overlay.classList.remove("hidden");
-  setButtonPosition(false);
-}
 let expanded = false;
-button.addEventListener("click", () => {
+
+toggle.addEventListener("click", () => {
   expanded = !expanded;
+
   if (expanded) {
-    expandGallery();
+    wrapper.style.maxHeight = `${wrapper.scrollHeight}px`;
+
+    overlay.classList.add("opacity-0", "pointer-events-none");
+    overlay.classList.remove("opacity-100");
+
+    icon.classList.add("rotate-180");
+    toggle.firstChild.textContent = "Zwiń";
   } else {
-    collapseGallery();
+    wrapper.style.maxHeight = getCollapsedHeight();
+
+    overlay.classList.remove("opacity-0", "pointer-events-none");
+    overlay.classList.add("opacity-100");
+
+    icon.classList.remove("rotate-180");
+    toggle.firstChild.textContent = "Rozwiń";
+
+    wrapper.style.maxHeight = getCollapsedHeight();
+
+    setTimeout(() => {
+      wrapper.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 300);
+  }
+});
+
+window.addEventListener("load", () => {
+  wrapper.style.maxHeight = getCollapsedHeight();
+});
+
+window.addEventListener("resize", () => {
+  if (!expanded) {
+    wrapper.style.maxHeight = getCollapsedHeight();
   }
 });
 

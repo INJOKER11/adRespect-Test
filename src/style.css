@@ -17,3 +17,7 @@ body {
   font-family: var(--font-sans);
   color: var(--color-black);
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -204,12 +204,14 @@
               </p>
             </div>
             <div class="flex flex-wrap gap-4 sm:gap-6 xl:gap-9">
-              <button
+              <a
+                href="#kontakt"
                 class="bg-primary text-grey cursor-pointer rounded-full px-6 py-3"
               >
                 Skontaktuj się z nami
-              </button>
-              <button
+              </a>
+              <a
+                href="#gallery"
                 class="border-primary text-primary flex cursor-pointer items-center gap-[8px] rounded-full border bg-transparent px-[22px] py-3"
               >
                 Zobacz nasze realizacje
@@ -226,7 +228,7 @@
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div class="h-86 md:h-90 lg:h-full">
@@ -288,8 +290,9 @@
         <div
           class="mx-auto flex w-full max-w-315.5 flex-wrap justify-center gap-8 lg:gap-10 xl:flex-nowrap xl:justify-between xl:gap-8"
         >
-          <div
-            class="flex w-full max-w-[378px] min-w-[310px] flex-col justify-between gap-10 rounded-[28px] bg-white px-6 py-8 md:gap-12 md:px-8 md:py-10 xl:gap-[63px] xl:px-[40px] xl:py-[48px]"
+          <a
+            href="#"
+            class="group flex w-full max-w-[378px] flex-col justify-between gap-10 rounded-[28px] bg-white px-6 py-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:gap-12 md:px-8 md:py-10 xl:gap-[63px] xl:px-10 xl:py-12"
           >
             <div class="flex flex-col gap-6 xl:gap-[34px]">
               <img
@@ -310,7 +313,7 @@
               </div>
             </div>
 
-            <a
+            <span
               class="text-primary flex cursor-pointer items-center gap-2 text-sm underline underline-offset-4 md:text-[15px] lg:text-[16px] xl:gap-[10px]"
             >
               Dowiedz się więcej
@@ -329,10 +332,11 @@
                   fill="currentColor"
                 />
               </svg>
-            </a>
-          </div>
-          <div
-            class="flex w-full max-w-[378px] min-w-[310px] flex-col justify-between gap-10 rounded-[28px] bg-white px-6 py-8 md:gap-12 md:px-8 md:py-10 xl:gap-[63px] xl:px-[40px] xl:py-[48px]"
+            </span>
+          </a>
+          <a
+            href="#"
+            class="group flex w-full max-w-[378px] flex-col justify-between gap-10 rounded-[28px] bg-white px-6 py-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:gap-12 md:px-8 md:py-10 xl:gap-[63px] xl:px-10 xl:py-12"
           >
             <div class="flex flex-col gap-6 xl:gap-[34px]">
               <img
@@ -353,7 +357,7 @@
               </div>
             </div>
 
-            <a
+            <span
               class="text-primary flex cursor-pointer items-center gap-2 text-sm underline underline-offset-4 md:text-[15px] lg:text-[16px] xl:gap-[10px]"
             >
               Dowiedz się więcej
@@ -372,10 +376,11 @@
                   fill="currentColor"
                 />
               </svg>
-            </a>
-          </div>
-          <div
-            class="flex w-full max-w-[378px] min-w-[310px] flex-col justify-between gap-10 rounded-[28px] bg-white px-6 py-8 md:gap-12 md:px-8 md:py-10 xl:gap-[63px] xl:px-[40px] xl:py-[48px]"
+            </span>
+          </a>
+          <a
+            href="#"
+            class="group flex w-full max-w-[378px] flex-col justify-between gap-10 rounded-[28px] bg-white px-6 py-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:gap-12 md:px-8 md:py-10 xl:gap-[63px] xl:px-10 xl:py-12"
           >
             <div class="flex flex-col gap-6 xl:gap-[34px]">
               <img
@@ -396,7 +401,7 @@
               </div>
             </div>
 
-            <a
+            <span
               class="text-primary flex cursor-pointer items-center gap-2 text-sm underline underline-offset-4 md:text-[15px] lg:text-[16px] xl:gap-[10px]"
             >
               Dowiedz się więcej
@@ -415,8 +420,8 @@
                   fill="currentColor"
                 />
               </svg>
-            </a>
-          </div>
+            </span>
+          </a>
         </div>
       </section>
 
@@ -485,7 +490,10 @@
       </section>
 
       <!--      realizacje-->
-      <section class="bg-beige pt-16 pb-11 md:pt-20 lg:pt-24 xl:pt-30">
+      <section
+        class="bg-beige pt-16 pb-11 md:pt-20 lg:pt-24 xl:pt-30"
+        id="gallery"
+      >
         <div>
           <div class="mx-auto max-w-260 px-[15px] xl:px-0">
             <p class="text-primary text-[12px] font-normal">Realizacje</p>
@@ -503,7 +511,7 @@
           <div class="relative mt-12 md:mt-16 lg:mt-20 xl:mt-[96px]">
             <div
               id="gallery-wrapper"
-              class="max-h-[420px] overflow-hidden md:max-h-[620px] lg:max-h-[900px] xl:max-h-368.75"
+              class="max-h-[420px] overflow-hidden transition-[max-height] duration-700 ease-in-out md:max-h-[620px] lg:max-h-[900px] xl:max-h-368.75"
             >
               <div id="projects-grid">
                 <button class="gallery-item block w-full">
@@ -624,7 +632,7 @@
 
             <div
               id="gallery-overlay"
-              class="absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(220,193,171,0)_0%,rgba(220,193,171,0)_15%,rgba(220,193,171,0.45)_60%,#DCC1AB_100%)]"
+              class="absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(220,193,171,0)_0%,rgba(220,193,171,0)_15%,rgba(220,193,171,0.45)_60%,#DCC1AB_100%)] opacity-100 transition-opacity duration-500"
             ></div>
 
             <button
@@ -713,7 +721,10 @@
       </div>
 
       <!--      kontakt-->
-      <section class="bg-grey px-6 py-12 md:px-10 md:py-16 xl:px-0 xl:py-15">
+      <section
+        id="kontakt"
+        class="bg-grey px-6 py-12 md:px-10 md:py-16 xl:px-0 xl:py-15"
+      >
         <div
           class="bg-primary mx-auto flex w-full max-w-260 flex-col gap-10 px-6 py-10 md:px-10 md:py-14 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-16 lg:py-20 xl:px-27.5 xl:py-30"
         >
