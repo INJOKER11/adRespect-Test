@@ -18,3 +18,4 @@ import "@fontsource/montserrat/700";
 
 import "./gallery.js";
 import "./header.js";
+import "./hero.js";
