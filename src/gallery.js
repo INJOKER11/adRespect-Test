@@ -15,7 +15,12 @@ const overlay = document.querySelector("#gallery-overlay");
 const button = document.querySelector("#gallery-toggle");
 const icon = document.querySelector("#gallery-toggle-icon");
 
-const COLLAPSED_HEIGHT = "1475px";
+function getCollapsedHeight() {
+  if (window.innerWidth >= 1280) return "1475px";
+  if (window.innerWidth >= 1024) return "900px";
+  if (window.innerWidth >= 768) return "620px";
+  return "420px";
+}
 
 const POSITION_CLASSES = {
   collapsed: ["absolute", "bottom-11.25", "left-1/2", "-translate-x-1/2"],
@@ -44,7 +49,7 @@ function expandGallery() {
 }
 
 function collapseGallery() {
-  wrapper.style.maxHeight = COLLAPSED_HEIGHT;
+  wrapper.style.maxHeight = getCollapsedHeight();
   overlay.classList.remove("hidden");
   setButtonPosition(false);
 }

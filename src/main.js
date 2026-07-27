@@ -17,3 +17,4 @@ import "@fontsource/montserrat/600";
 import "@fontsource/montserrat/700";
 
 import "./gallery.js";
+import "./header.js";
