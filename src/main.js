@@ -11,4 +11,9 @@ import "@fontsource/inter/700-italic.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/800-italic.css";
 
-import "@fontsource/montserrat";
+import "@fontsource/montserrat/400";
+import "@fontsource/montserrat/500";
+import "@fontsource/montserrat/600";
+import "@fontsource/montserrat/700";
+
+import "./gallery.js";

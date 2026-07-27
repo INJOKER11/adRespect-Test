@@ -37,7 +37,7 @@
 
     <main>
       <!--      hero-->
-      <section class="bg-beige relative min-h-[737px] overflow-hidden">
+      <section class="bg-beige relative min-h-184.25 overflow-hidden">
         <!--        px-[89px_64px] -->
         <div class="mx-auto grid max-w-315.5 grid-cols-[752px_688px]">
           <div class="flex max-w-149.75 flex-col gap-18 py-36">
@@ -82,7 +82,7 @@
           <div class="h-full">
             <img
               src="./src/assets/slider-pic.png"
-              class="absolute top-0 right-0 h-full w-[calc(688px+(100vw-1440px)/2)] max-w-none object-cover"
+              class="absolute top-0 right-0 h-full w-[max(400px,calc(688px+(100vw-1440px)/2))] max-w-none object-cover"
               alt=""
             />
           </div>
@@ -100,7 +100,7 @@
       </section>
 
       <!--      oferta-->
-      <section class="bg-grey flex flex-col gap-[96px] pt-[120px] pb-[160px]">
+      <section class="bg-grey flex flex-col gap-24 pt-30 pb-40">
         <div class="mx-auto flex w-full max-w-[1040px] flex-col gap-[16px]">
           <h6 class="text-primary text-[12px]">Oferta</h6>
           <div class="flex flex-col gap-[32px]">
@@ -233,7 +233,7 @@
       </section>
 
       <!--      o firmie-->
-      <section class="bg-primary relative min-h-[720px] overflow-hidden">
+      <section class="bg-primary relative min-h-180 overflow-hidden">
         <div class="mx-auto grid max-w-315.5 grid-cols-[688px_752px]">
           <div class="h-full">
             <img
@@ -293,7 +293,227 @@
       </section>
 
       <!--      realizacje-->
-      <section>Realizacje</section>
+      <section class="bg-beige pt-30 pb-11">
+        <div>
+          <div class="mx-auto max-w-260">
+            <p class="text-primary text-[12px] font-normal">Realizacje</p>
+            <h2 class="mt-4 text-[48px] text-black">
+              <span
+                class="font-[family-name:var(--font-montserrat)] font-medium"
+                >Nasze</span
+              >
+              <span class="font-medium italic">projekty</span>
+            </h2>
+          </div>
+
+          <div class="relative mt-[96px]">
+            <div id="gallery-wrapper" class="max-h-368.75 overflow-hidden">
+              <div id="projects-grid">
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/1.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/2.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/3.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/4.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/5.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/6.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/7.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/8.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/9.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/1.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/2.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/3.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/4.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/5.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+                <button class="gallery-item block w-full">
+                  <img
+                    src="./src/assets/gallery/6.png"
+                    class="block h-auto w-full object-cover"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div
+              id="gallery-overlay"
+              class="absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(220,193,171,0)_0%,rgba(220,193,171,0)_15%,rgba(220,193,171,0.45)_60%,#DCC1AB_100%)]"
+            ></div>
+
+            <button
+              id="gallery-toggle"
+              class="absolute bottom-11.25 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-black bg-transparent px-5.5 py-3"
+            >
+              Rozwiń
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                id="gallery-toggle-icon"
+              >
+                <path
+                  d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 -1.6221e-08L7.36358 -3.13994e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00472 16L16 7.99529Z"
+                  class="text-black"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--      galery modal-->
+      <div
+        id="lightbox"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4"
+      >
+        <button
+          id="lightbox-close"
+          class="text-grey absolute top-6 right-6 text-3xl leading-none"
+          aria-label="Zamknij"
+        >
+          &times;
+        </button>
+
+        <button
+          id="lightbox-prev"
+          class="absolute top-1/2 left-4 -translate-y-1/2 text-4xl"
+          aria-label="Poprzednie"
+        >
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="currentColor"
+            class="text-grey"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7951 22.9393C10.2093 23.5251 10.2093 24.4749 10.7951 25.0607L20.3411 34.6066C20.9268 35.1924 21.8766 35.1924 22.4624 34.6066C23.0482 34.0208 23.0482 33.0711 22.4624 32.4853L13.9771 24L22.4624 15.5147C23.0482 14.9289 23.0482 13.9792 22.4624 13.3934C21.8766 12.8076 20.9268 12.8076 20.3411 13.3934L10.7951 22.9393ZM36.1442 24L36.1442 22.5L11.8558 22.5L11.8558 24L11.8558 25.5L36.1442 25.5L36.1442 24Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[90vh] max-w-[90vw] object-contain"
+        />
+
+        <button
+          id="lightbox-next"
+          class="absolute top-1/2 right-4 -translate-y-1/2 rotate-180 text-4xl"
+          aria-label="Następne"
+        >
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="currentColor"
+            class="text-grey"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7951 22.9393C10.2093 23.5251 10.2093 24.4749 10.7951 25.0607L20.3411 34.6066C20.9268 35.1924 21.8766 35.1924 22.4624 34.6066C23.0482 34.0208 23.0482 33.0711 22.4624 32.4853L13.9771 24L22.4624 15.5147C23.0482 14.9289 23.0482 13.9792 22.4624 13.3934C21.8766 12.8076 20.9268 12.8076 20.3411 13.3934L10.7951 22.9393ZM36.1442 24L36.1442 22.5L11.8558 22.5L11.8558 24L11.8558 25.5L36.1442 25.5L36.1442 24Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
 
       <!--      kontakt-->
       <section class="bg-grey py-15">
