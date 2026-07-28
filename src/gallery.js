@@ -14,6 +14,7 @@ const wrapper = document.getElementById("gallery-wrapper");
 const toggle = document.getElementById("gallery-toggle");
 const overlay = document.getElementById("gallery-overlay");
 const icon = document.getElementById("gallery-toggle-icon");
+const galleryContainer = document.getElementById("gallery-container");
 
 const COLLAPSED_HEIGHT = {
   sm: "420px",
@@ -41,7 +42,12 @@ toggle.addEventListener("click", () => {
     overlay.classList.remove("opacity-100");
 
     icon.classList.add("rotate-180");
+
     toggle.firstChild.textContent = "Zwiń";
+
+    galleryContainer.classList.add("pb-18", "md:pb-26", "xl:pb-28");
+
+    toggle.style.bottom = "-16px";
   } else {
     wrapper.style.maxHeight = getCollapsedHeight();
 
@@ -49,9 +55,12 @@ toggle.addEventListener("click", () => {
     overlay.classList.add("opacity-100");
 
     icon.classList.remove("rotate-180");
+
     toggle.firstChild.textContent = "Rozwiń";
 
-    wrapper.style.maxHeight = getCollapsedHeight();
+    galleryContainer.classList.remove("pb-18", "md:pb-26", "xl:pb-28");
+
+    toggle.style.bottom = "";
 
     setTimeout(() => {
       wrapper.scrollIntoView({

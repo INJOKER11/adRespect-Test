@@ -42,6 +42,61 @@ closeBtn.addEventListener("click", () => {
   menu.classList.add("translate-x-full");
 });
 
+// oferta dropdown
+const lgOfertaBtn = document.getElementById("lgOfertaBtn");
+const ofertaDropdown = document.getElementById("ofertaDropdown");
+const ofertaIcon = document.getElementById("ofertaIcon");
+
+let dropDownIsOpen = false;
+
+lgOfertaBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+
+  dropDownIsOpen = !dropDownIsOpen;
+
+  if (dropDownIsOpen) {
+    ofertaDropdown.classList.remove(
+      "invisible",
+      "opacity-0",
+      "scale-95",
+      "translate-y-2",
+    );
+
+    ofertaDropdown.classList.add(
+      "visible",
+      "opacity-100",
+      "scale-100",
+      "translate-y-0",
+    );
+
+    ofertaIcon.classList.add("rotate-180");
+  } else {
+    closeDropdown();
+  }
+});
+
+function closeDropdown() {
+  dropDownIsOpen = false;
+
+  ofertaDropdown.classList.remove(
+    "visible",
+    "opacity-100",
+    "scale-100",
+    "translate-y-0",
+  );
+
+  ofertaDropdown.classList.add(
+    "invisible",
+    "opacity-0",
+    "scale-95",
+    "translate-y-2",
+  );
+
+  ofertaIcon.classList.remove("rotate-180");
+}
+
+document.addEventListener("click", closeDropdown);
+
 // accordeon oferta
 const ofertaBtn = document.getElementById("mobileOfertaBtn");
 const ofertaMenu = document.getElementById("mobileOfertaMenu");
