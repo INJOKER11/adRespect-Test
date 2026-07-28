@@ -16,6 +16,7 @@ import "@fontsource/montserrat/500";
 import "@fontsource/montserrat/600";
 import "@fontsource/montserrat/700";
 
-import "./gallery.js";
-import "./header.js";
-import "./hero.js";
+import "./js/gallery.js";
+import "./js/header.js";
+import "./js/hero.js";
+import "./js/aos.js";
